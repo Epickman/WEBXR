@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/unity.loader.js";
+      var loaderUrl = buildUrl + "/Nueva carpeta.loader.js";
       var config = {
-        dataUrl: buildUrl + "/unity.data",
-        frameworkUrl: buildUrl + "/unity.framework.js",
-        codeUrl: buildUrl + "/unity.wasm",
+        dataUrl: buildUrl + "/Nueva carpeta.data",
+        frameworkUrl: buildUrl + "/Nueva carpeta.framework.js",
+        codeUrl: buildUrl + "/Nueva carpeta.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
@@ -128,4 +128,7 @@
 
     </script>
   </body>
+  <FilesMatch "\.gz$">
+    Header set Content-Encoding "gzip"
+  </FilesMatch>
 </html>
